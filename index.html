@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=0">
     <link rel="stylesheet" href="/css/style.css">
     <title>testLab</title>
 </head>
@@ -14,6 +14,7 @@
                 <div class="header-title">
                     <a href="">testLab</a>
                 </div>
+                <div class="header-burger"><img src="/src/header/burger.svg" alt=""></div>
                 <div class="header-menu">
                     <ul class="header-menu--list">
                         <li class="header-menu--li"><a href="#">Как это работает</a></li>
@@ -24,7 +25,7 @@
                 </div>
             </div>
         </header>
-        <main>
+        <main class="main">
             <section class="mainscreen">
                 <div class="mainscreen-bg">
                     <img class="mainscreen-img" src="/src/mainScreen/bgImg.jpg" alt="Background">
@@ -40,23 +41,31 @@
                 <div class="howdoesit-tablet">
                     <div class="howdoesit-item">
                         <img src="/src/howDoesItwork/icon1.svg" alt="icon" class="howdoesit-item--icon">
-                        <div class="howdoesit-item--title">Прочитай задание внимательно</div>
-                        <div class="howdoesit-item--text">Думаю у тебя не займет это больше двух-трех минут</div>
+                        <div class="howdoesit-item--content">
+                            <div class="howdoesit-item--title">Прочитай задание внимательно</div>
+                            <div class="howdoesit-item--text">Думаю у тебя не займет это больше двух-трех минут</div>
+                        </div>
                     </div>
                     <div class="howdoesit-item">
                         <img src="/src/howDoesItwork/icon2.svg" alt="icon" class="howdoesit-item--icon">
-                        <div class="howdoesit-item--title">Изучи весь макет заранее</div>
-                        <div class="howdoesit-item--text">Подумай как это будет работать на разных разрешениях и при скролле</div>
+                        <div class="howdoesit-item--content">
+                            <div class="howdoesit-item--title">Изучи весь макет заранее</div>
+                            <div class="howdoesit-item--text">Подумай как это будет работать на разных разрешениях и при скролле</div>
+                        </div>
                     </div>
                     <div class="howdoesit-item">
                         <img src="/src/howDoesItwork/icon3.svg" alt="icon" class="howdoesit-item--icon">
-                        <div class="howdoesit-item--title">Сделай хорошо</div>
-                        <div class="howdoesit-item--text">Чтобы мы могли тебе доверить подобные задачи в будущем</div>
+                        <div class="howdoesit-item--content">
+                            <div class="howdoesit-item--title">Сделай хорошо</div>
+                            <div class="howdoesit-item--text">Чтобы мы могли тебе доверить подобные задачи в будущем</div>
+                        </div>
                     </div>
                     <div class="howdoesit-item">
                         <img src="/src/howDoesItwork/icon4.svg" alt="icon" class="howdoesit-item--icon">
-                        <div class="howdoesit-item--title">Получи предложение</div>
-                        <div class="howdoesit-item--text">Ну тут все просто, не я придумал правила, но думаю так и будет)))</div>
+                        <div class="howdoesit-item--content">
+                            <div class="howdoesit-item--title">Получи предложение</div>
+                            <div class="howdoesit-item--text">Ну тут все просто, не я придумал правила, но думаю так и будет)))</div>
+                            </div>
                     </div>
                 </div>
                 <div class="howdoesit-wrapper">
@@ -72,8 +81,104 @@
                     </div>
                 </div>
             </section>
+            <section class="reviews">
+                <div class="reviews-wrapper">
+                    <div class="reviews-title section-title">Отзывы</div>
+                    <div class="reviews-slider slider">
+                        <div class="slider-item">
+                            <div class="slider-item--header">
+                                <img class="slider-item--avatar" src="/src/reviews/noname.svg" alt="avatar">
+                                <div class="slider-item--info">
+                                    <div class="slider-item--name">Константинов Михаил Павлович</div>
+                                    <div class="slider-item--city">Санкт-Петербург</div>
+                                </div>
+                            </div>
+                            <div class="slider-item--content">
+                                Каждый из нас понимает очевидную вещь: перспективное планирование предоставляет широкие возможности для анализа существующих паттернов поведения. В своём стремлении улучшить пользовательский опыт мы 
+                            </div>
+                        </div>
+                        <div class="slider-item">
+                            <div class="slider-item--header">
+                                <img class="slider-item--avatar" src="/src/reviews/noname.svg" alt="avatar">
+                                <div class="slider-item--info">
+                                    <div class="slider-item--name">Константинов Михаил Павлович</div>
+                                    <div class="slider-item--city">Санкт-Петербург</div>
+                                </div>
+                            </div>
+                            <div class="slider-item--content">
+                                Каждый из нас понимает очевидную вещь: перспективное планирование предоставляет широкие возможности для анализа существующих паттернов поведения. В своём стремлении улучшить пользовательский опыт мы 
+                            </div>
+                        </div>
+                        <div class="slider-item">
+                            <div class="slider-item--header">
+                                <img class="slider-item--avatar" src="/src/reviews/noname.svg" alt="avatar">
+                                <div class="slider-item--info">
+                                    <div class="slider-item--name">Константинов Михаил Павлович</div>
+                                    <div class="slider-item--city">Санкт-Петербург</div>
+                                </div>
+                            </div>
+                            <div class="slider-item--content">
+                                Каждый из нас понимает очевидную вещь: перспективное планирование предоставляет широкие возможности для анализа существующих паттернов поведения. В своём стремлении улучшить пользовательский опыт мы 
+                            </div>
+                        </div>
+                        <div class="slider-item">
+                            <div class="slider-item--header">
+                                <img class="slider-item--avatar" src="/src/reviews/noname.svg" alt="avatar">
+                                <div class="slider-item--info">
+                                    <div class="slider-item--name">Константинов Михаил Павлович</div>
+                                    <div class="slider-item--city">Санкт-Петербург</div>
+                                </div>
+                            </div>
+                            <div class="slider-item--content">
+                                Каждый из нас понимает очевидную вещь: перспективное планирование предоставляет широкие возможности для анализа существующих паттернов поведения. В своём стремлении улучшить пользовательский опыт мы 
+                            </div>
+                        </div>
+                        <div class="slider-item">
+                            <div class="slider-item--header">
+                                <img class="slider-item--avatar" src="/src/reviews/noname.svg" alt="avatar">
+                                <div class="slider-item--info">
+                                    <div class="slider-item--name">Константинов Михаил Павлович</div>
+                                    <div class="slider-item--city">Санкт-Петербург</div>
+                                </div>
+                            </div>
+                            <div class="slider-item--content">
+                                Каждый из нас понимает очевидную вещь: перспективное планирование предоставляет широкие возможности для анализа существующих паттернов поведения. В своём стремлении улучшить пользовательский опыт мы 
+                            </div>
+                        </div>
+                        <div class="slider-item">
+                            <div class="slider-item--header">
+                                <img class="slider-item--avatar" src="/src/reviews/noname.svg" alt="avatar">
+                                <div class="slider-item--info">
+                                    <div class="slider-item--name">Константинов Михаил Павлович</div>
+                                    <div class="slider-item--city">Санкт-Петербург</div>
+                                </div>
+                            </div>
+                            <div class="slider-item--content">
+                                Каждый из нас понимает очевидную вещь: перспективное планирование предоставляет широкие возможности для анализа существующих паттернов поведения. В своём стремлении улучшить пользовательский опыт мы 
+                            </div>
+                        </div>
+                        <div class="slider-item">
+                            <div class="slider-item--header">
+                                <img class="slider-item--avatar" src="/src/reviews/noname.svg" alt="avatar">
+                                <div class="slider-item--info">
+                                    <div class="slider-item--name">Константинов Михаил Павлович</div>
+                                    <div class="slider-item--city">Санкт-Петербург</div>
+                                </div>
+                            </div>
+                            <div class="slider-item--content">
+                                Каждый из нас понимает очевидную вещь: перспективное планирование предоставляет широкие возможности для анализа существующих паттернов поведения. В своём стремлении улучшить пользовательский опыт мы 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </main>
-        <footer></footer>
+        <footer class="footer">
+            <div class="footer-text">© 2021 Лаборатория интернет</div>
+        </footer>
     </div>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="/js/slick.min.js"></script>
+    <script src="/js/slider.js"></script>
 </body>
 </html>
